@@ -11,6 +11,7 @@ COPY . .
 RUN javac Server.java ProcessServer.java
 
 # Mở port server lắng nghe (VD: 1503)
+ENV PORT 1503
 EXPOSE 1503
 
 # Lệnh khởi động container (chạy Server)
